@@ -1,7 +1,7 @@
 import React from 'react';
 import LinkButton from './LinkButton';
 
-const Hero = ({ title, subtitle, containsButton, buttonText, buttonLink }) => {
+const Hero = ({ title, subtitle, containsButton, buttonText, buttonLink, backgroundImage }) => {
     return ( 
         <div>
             <h1>{title}</h1>

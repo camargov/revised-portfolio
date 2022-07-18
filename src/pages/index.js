@@ -1,4 +1,4 @@
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import * as React from "react"
 import ContactBanner from "../components/ContactBanner"
 import Hero from "../components/Hero"
@@ -6,7 +6,8 @@ import Layout from "../components/Layout"
 
 /* 
 TODO:
-- learn how to implement links from Prismic
+- redo links for projects in prismic - might have to use slicing
+- add contact page (design and to prismic)
 */
 
 const IndexPage = ({ data }) => {
@@ -20,7 +21,7 @@ const IndexPage = ({ data }) => {
           subtitle={document.portfolio_subtitle} 
           containsButton={true} 
           buttonText={document.about_me_button_text}
-          buttonLink={document.about_me_button_link}
+          buttonLink={document.about_me_button_link.url}
         />
         <div className="project-tree-container">
           <h1>{document.project_tree_header.text}</h1>

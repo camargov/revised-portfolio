@@ -17,7 +17,7 @@ module.exports = {
         repositoryName: process.env.GATSBY_PRISMIC_REPO_NAME,
         accessToken: process.env.PRISMIC_ACCESS_TOKEN,
         customTypesApiToken: process.env.PRISMIC_CUSTOM_TYPES_API_TOKEN,
-        linkResolver: (doc) => linkResolver(doc),
+        linkResolver: require('./src/prismic-configuration').linkResolver,
         schemas: {
           navigation: {},
         }

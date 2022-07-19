@@ -17,7 +17,6 @@ const Footer = () => {
                         <Link to={link.page_link.url}>{link.page}</Link>
                     );
                 })}
-
             </div>
         </div>
      );

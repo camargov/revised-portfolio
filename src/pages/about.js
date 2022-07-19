@@ -35,7 +35,7 @@ const About = ({ data }) => {
                     {document.more_info_group.map(group => {
                         return (
                             <div>
-                                <img src={group.more_info_photo.url}/>
+                                <img src={group.more_info_photo.url} alt="temp"/>
                                 <div>
                                     <h2>{group.more_info_header.text}</h2>
                                     <p>{group.more_info_description}</p>

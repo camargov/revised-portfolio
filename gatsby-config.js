@@ -2,8 +2,6 @@ require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
-const linkResolver = require('./linkResolver.js')
-
 module.exports = {
   siteMetadata: {
     title: `Portfolio`,
